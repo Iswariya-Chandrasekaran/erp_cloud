@@ -56,11 +56,11 @@ bench use dev.localhost
 
 # Install ERPNext version 15
 bench get-app --branch version-15 --resolve-deps erpnext
-bench get-app https://github.com/frappe/hrms.git
+#bench get-app https://github.com/frappe/hrms.git
 
 # Install the apps on the site
 bench --site dev.localhost install-app erpnext
-bench --site dev.localhost install-app hrms
+#bench --site dev.localhost install-app hrms
 
 # Optional: Rebuild assets and restart the server
 bench upgrade --patch
