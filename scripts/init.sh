@@ -58,8 +58,7 @@ bench get-app --branch version-15 --resolve-deps erpnext
 # Install the apps on the site
 bench --site dev.localhost install-app erpnext
 #bench --site dev.localhost install-app hrms
-bench --site dev.localhost --force restore --mariadb-root-password 123 /workspace/frappe-bench/sites/dev.localhost/private/backups/20241115_141802-dev_localhost-database.sql.gz --with-public-files /workspace/frappe-bench/sites/dev.localhost/private/backups/20241115_141802-dev_localhost-files.tar --with-private-files /workspace/frappe-bench/sites/dev.localhost/private/backups/20241115_141802-dev_localhost-private-files.tar
-bench --site dev.localhost migrate
+bench --site dev.localhost --force restore --mariadb-root-password 123 /workspace/frappe-bench/sites/dev.localhost/private/backups/20241118_171219-dev_localhost-database.sql.gz --with-public-files /workspace/frappe-bench/sites/dev.localhost/private/backups/20241118_171219-dev_localhost-files.tar --with-private-files /workspace/frappe-bench/sites/dev.localhost/private/backups/20241118_171219-dev_localhost-private-files.tarbench --site dev.localhost migrate
 # Optional: Rebuild assets and restart the server
 #bench upgrade --patch
 #bench restart
